@@ -55,6 +55,7 @@ table {
     --secondary-color: #FFFFFF;
     --light-color: #B4CDED;
     --dark-color: #344966;
+    --tertiary-color: #6C45E2;
     --primary-font: 'Roboto Mono';
 }
 
@@ -80,7 +81,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #B4CDED;
+    color: var(--light-color);
     border-bottom: solid var(--light-color);
 }
 
@@ -133,6 +134,18 @@ body {
     animation-iteration-count: infinite;
 }
 
+@keyframes skiplinkmove {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
 label {
     color: var(--secondary-color);
 }
@@ -147,16 +160,23 @@ label {
     color: var(--primary-color);
 }
 
-@keyframes skiplinkmove {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+.portfolio {
+    color: var(--secondary-color);
+}
+
+.portfolio .github {
+    color: var(--primary-color);
+    background-color: var(--light-color);
+}
+
+.portfolio .instagram {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+.portfolio a:hover {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
 }
 
 @media (min-width: 968px) {

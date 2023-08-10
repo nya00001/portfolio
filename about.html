@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  
+    <script src="https://kit.fontawesome.com/cf37d81192.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Nya Studios</title>    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <div>
+              <a class="pe-3" href="index.html">
+                <img class="animate__animated animate__backInDown" src="images/logo.png" alt="logo">
+              </a>
+              <a class="navbar-brand fs-1 fw-semibold logo-1" href="index.html">NYA</a>
+              <a class="navbar-brand fs-1 fw-semibold logo-2" href="index.html">Studios</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                <span class="fs-1 fw-semibold">&#9776;</span>
+            </button>
+            <div class="justify-content-end justify-content-sm-end navbar-collapse collapse" id="main-nav">
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link me-3 fs-3" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3 fs-3" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3 fs-3" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+    <main>   
+        <div class="skip-link d-flex justify-content-end arrow-container p-3 up">
+            <a href="#down" aria-label="Go to top">
+                <i class="fa-solid fa-arrow-down animate__animated animate__shakeY"></i>
+            </a>
+        </div>
+        <div class="container mt-5 portfolio">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <picture class="col-6">
+                        <source srcset="images/web-dev-400.png" media="(max-width: 401px)">
+                        <source srcset="images/web-dev-600.png" media="(max-width: 967px)">
+                        <source srcset="images/web-dev-800.png" media="(min-width: 968px)">
+                        <img class="img-fluid" src="images/web-dev.jpg" alt="web development">
+                    </picture>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h1 class="display-3 mb-5">Web Development</h1>
+                    <p class="fs-3 mb-3">I architect captivating websites and interactive web applications using programming languages like HTML, CSS, and JavaScript, crafting seamless user experiences and embracing the latest technologies and frameworks. With an eye for design and a passion for problem-solving, I build responsive layouts, implement cutting-edge functionalities to create intuitive, secure, and scalable solutions</p>
+                </div>
+                <div class="col-md-12 text-center mb-5">
+                    <a class="github btn fs-3 btn-lg m-5 mx-5 border border-5" href="https://www.github.com" role="button">Check my portfolio <i class="fa-brands fa-github p-3 fs-1"></i></a>
+                </div>
+                <div class="col-md-6">
+                    <picture class="col-6">
+                        <source srcset="images/graphic-400.jpg" media="(max-width: 401px)">
+                        <source srcset="images/graphic-600.jpg" media="(max-width: 967px)">
+                        <source srcset="images/graphic-800.jpg" media="(min-width: 968px)">
+                        <img class="img-fluid" src="images/graphic.jpg" alt="web development">
+                    </picture>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h1 class="display-3 mb-5">Digital Graphics</h1>
+                    <p class="fs-3 ">As a web developer skilled in digital graphics, I craft captivating websites and web applications while creating visually stunning graphics to enhance user experiences. With a perfect blend of technical and artistic expertise, I deliver seamless, visually appealing, and user-friendly digital solutions that captivate audiences across platforms and devices.</p>
+                </div>
+                <div class="col-md-12 text-center mt-3">
+                    <a class="instagram btn fs-3 btn-lg m-5 mx-5 border border-5" href="https://www.instagram.com" role="button">Check my portfolio <i class="fab fa-instagram p-3 fs-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="down" role="contentinfo">
+        <div class="footer">
+            <div class="d-flex justify-content-center pt-5 social-icons">
+                <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook p-3 fs-1"></i></a>
+                <a href="https://www.github.com" aria-label="Github"><i class="fa-brands fa-github p-3 fs-1"></i></a>
+                <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram p-3 fs-1"></i></a>
+                <a href="https://mail.google.com" aria-label="Email"><i class="fa-regular fa-envelope p-3 fs-1"></i></a>
+            </div>
+            <p class="text-center">NYA Studios &copy;</p>
+            <div class=" skip-link d-flex justify-content-end arrow-container p-3">
+                 <a href="#top" aria-label="Go to top">
+                   <i class="fa-solid fa-arrow-up animate__animated animate__shakeY"></i>
+                </a> 
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
