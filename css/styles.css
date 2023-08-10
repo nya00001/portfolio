@@ -1,0 +1,43 @@
+.body {
+    font-family: 'Roboto Mono', monospace; 
+}
+
+:root {
+    --primary-color: #0A0C1F;
+    --secondary-color: #FFFFFF;
+    --light-color: #B4CDED;
+    --dark-color: #344966;
+}
+
+  /* Override Bootstrap's default colors with your variables */
+.navbar {
+    background-color: var(--primary-color);
+}
+  
+.navbar-toggler {
+    color: var(--secondary-color);
+}
+
+.logo-1 {
+    color: var(--secondary-color);
+}
+
+.logo-2 {
+    color: var(--light-color);
+}
+  
+.nav-link {
+    color: var(--secondary-color);
+}
+
+.nav-link:hover {
+    color: #B4CDED;
+}
+
+.logo-1:hover {
+    color: var(--light-color);
+}
+
+.logo-2:hover {
+    color: var(--secondary-color);
+}
