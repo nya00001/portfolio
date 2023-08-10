@@ -58,8 +58,7 @@ table {
     --primary-font: 'Roboto Mono';
 }
 
-  /* Override Bootstrap's default colors with your variables */
-.navbar {
+body {
     background-color: var(--primary-color);
     font-family: var(--primary-font);
 }
@@ -95,7 +94,6 @@ table {
 
 .hero-content {
     color: var(--secondary-color);
-    font-family: var(--primary-font);
 }
 
 .fa-solid {
@@ -103,22 +101,8 @@ table {
     color: var(--secondary-color);
 }
 
-.arrow-container {
-    background-color: var(--primary-color);
-}
-
-.skip-down {
-    background-color: var(--primary-color);
-}
-
-.hero {
-    background-color: var(--primary-color);
-}
-
 .work {
-    background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-family: var(--primary-font);
 }
 
 .home-btn {
@@ -128,14 +112,12 @@ table {
 }
 
 .home-btn:hover {
-    background-color: #344966;
-    border-color: #B4CDED;
+    background-color: var(--dark-color);
+    border-color: var(--light-color);
 }
 
 .footer {
-    background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-family: var(--primary-font);
 }
 
 .social-icons a {
@@ -149,6 +131,20 @@ table {
 .skip-link a:hover {
     animation: skiplinkmove 0.3s ease-in-out;
     animation-iteration-count: infinite;
+}
+
+label {
+    color: var(--secondary-color);
+}
+
+.submit {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+}
+
+.submit:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
 }
 
 @keyframes skiplinkmove {
@@ -167,11 +163,9 @@ table {
 
     .hero-image {
         position: relative;
-        width: 100%;
     }
 
     .hero-image img {
-        width: 100%;
         height: 800px;
     }
 
@@ -212,8 +206,5 @@ table {
         text-align: center;
     }
 
-    .my-photo img {
-        max-width: 100%;
-        height: auto;
-    }
+
 }
