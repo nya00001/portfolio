@@ -13,88 +13,89 @@
     <title>Nya Studios</title>    
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-            <div>
-              <a class="pe-3 animate__animated animate__backInDown" href="index.html">
-                <img src="images/logo.png" alt="logo">
-              </a>
-              <a class="navbar-brand fs-2 fw-semibold logo-1" href="index.html">NYA</a>
-              <a class="navbar-brand fs-2 fw-semibold logo-2" href="index.html">Studios</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
-                <span class="fs-1 fw-semibold">&#9776;</span>
-            </button>
-            <div class="justify-content-end justify-content-sm-end navbar-collapse collapse" id="main-nav">
-                <ul class="navbar-nav fw-bold">
-                    <li class="nav-item">
-                        <a class="nav-link me-3 fs-3" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-3 fs-3" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-3 fs-3" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>    
-    </nav>
-    <main>   
+    <header >
+        <header id="top">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <div>
+                <a class="pe-3 animate__animated animate__backInDown" href="index.html">
+                    <img role="img" src="images/logo.png" alt="logo">
+                </a>
+                <a class="navbar-brand fs-2 fw-semibold logo-1" href="index.html">NYA</a>
+                <a class="navbar-brand fs-2 fw-semibold logo-2" href="index.html">Studios</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                    <span class="fs-1 fw-semibold">&#9776;</span>
+                </button>
+                <div role="navigation" class="justify-content-end justify-content-sm-end navbar-collapse collapse" id="main-nav">
+                    <ul class="navbar-nav fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link me-3 fs-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 fs-3" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 fs-3" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+    </header>   
+    <main role="main" id="maincontent">   
         <div class="skip-link d-flex justify-content-end arrow-container p-3 up">
-            <a href="#down" aria-label="Go to top">
+            <a href="#down" aria-label="Skip to main content">
                 <i class="fa-solid fa-arrow-down animate__animated animate__shakeY"></i>
             </a>
         </div>
-        <div class="col-12 hero">
-            <div class="hero-image">
+        <div role="region" class="col-12 hero">
+            <div role="banner" class="hero-image">
                 <picture>
                     <source srcset="images/banner-600x400.jpg" media="(max-width: 574px)">
                     <source srcset="images/banner-1000x600.jpg" media="(max-width: 967px)">
                     <source srcset="images/banner-2000x1000.jpg" media="(min-width: 968px)">
-                    <img class="opacity w-100" itemprop="image" role="img" src="images/banner.jpeg" alt="Hero Banner Image">
+                    <img role="img" class="opacity w-100" itemprop="image" role="img" src="images/banner.jpeg" alt="Hero Banner Image">
                 </picture>
             </div>
             <div class="hero-content text-center">
-                <h1 class="m-5 display-1 fw-semibold">Hello, World!</h1>
+                <h1 role="heading" class="m-5 display-1 fw-semibold">Hello, World!</h1>
                 <p class="pt-5 fw-medium fs-5">Welcome to my website! I am excited to have you here.</p>
                 <p class="p-4 fw-medium fs-5">Take a moment to browse through my pages, discover the latest about me, and join me on my learning journey. I'm excited to embark on this journey together and can't wait to share my knowledge and experiences with you.</p>
                 <p class="pb-5 fw-medium fs-5">Thank you for visiting, and I hope you find inspiration in your time spent here.</p>
             </div>
         </div>
-<div class="container work">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="my-photo m-3 d-md-flex align-items-start">
-                <picture>
-                    <source srcset="images/me-400.jpeg" media="(max-width: 574px)">
-                    <source srcset="images/me-600.jpeg" media="(max-width: 967px)">
-                    <source srcset="images/me-800.jpeg" media="(min-width: 968px)">
-                    <img class="image-fluid w-100" role="img" src="images/me.jpeg" alt="my picture">
-                </picture>
-            </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="d-md-flex flex-column justify-content-between">
-                <div class="me-work text-center">
-                    <h1 class="p-5 mt-5 display-4">Let's work together!</h1>
+        <section itemscope itemtype="https://schema.org/Person" role="region" class="container work">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="my-photo m-3 d-md-flex align-items-start">
+                        <picture>
+                            <source srcset="images/me-400.jpeg" media="(max-width: 574px)">
+                            <source srcset="images/me-600.jpeg" media="(max-width: 967px)">
+                            <source srcset="images/me-800.jpeg" media="(min-width: 968px)">
+                            <img itemprop="image" role="img" class="image-fluid w-100" role="img" src="images/me.jpeg" alt="my picture">
+                        </picture>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center home-button">
-                    <a class="btn fs-3 btn-lg p-3 m-5 home-btn mx-5" href="about.html" role="button">About</a>
-                    <a class="btn fs-3 btn-lg p-3 m-5 home-btn mx-5" href="contact.html" role="button">Contact</a>
+                <div class="col-12 col-md-6">
+                    <div class="d-md-flex flex-column justify-content-between">
+                        <div class="me-work text-center">
+                            <h1 role="heading" class="p-5 mt-5 display-4">Let's work together!</h1>
+                        </div>
+                        <div class="d-flex justify-content-center home-button">
+                            <a class="btn fs-3 btn-lg p-3 m-5 home-btn mx-5" href="about.html" role="button">About</a>
+                            <a class="btn fs-3 btn-lg p-3 m-5 home-btn mx-5" href="contact.html" role="button">Contact</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-        </div>
-
+        </section>
     </main>
     <footer id="down" role="contentinfo">
         <div class="footer">
             <div class="d-flex justify-content-center pt-5 social-icons">
                 <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook p-3 fs-1"></i></a>
-                <a href="https://www.github.com" aria-label="Github"><i class="fa-brands fa-github p-3 fs-1"></i></a>
+                <a href="https://github.com/nya00001" aria-label="Github"><i class="fa-brands fa-github p-3 fs-1"></i></a>
                 <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram p-3 fs-1"></i></a>
                 <a href="https://mail.google.com" aria-label="Email"><i class="fa-regular fa-envelope p-3 fs-1"></i></a>
             </div>

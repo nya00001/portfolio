@@ -13,60 +13,66 @@
     <title>Nya Studios</title>    
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-            <div>
-              <a class="pe-3" href="index.html">
-                <img class="animate__animated animate__backInDown" src="images/logo.png" alt="logo">
-              </a>
-              <a class="navbar-brand fs-2 fw-semibold logo-1" href="index.html">NYA</a>
-              <a class="navbar-brand fs-2 fw-semibold logo-2" href="index.html">Studios</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
-                <span class="fs-1 fw-semibold">&#9776;</span>
-            </button>
-            <div class="justify-content-end justify-content-sm-end navbar-collapse collapse" id="main-nav">
-                <ul class="navbar-nav fw-bold">
-                    <li class="nav-item">
-                        <a class="nav-link me-3 fs-3" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-3 fs-3" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-3 fs-3" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>    
-    </nav>
-    <main>   
+    <header >
+        <header id="top">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <div>
+                <a class="pe-3 animate__animated animate__backInDown" href="index.html">
+                    <img role="img" src="images/logo.png" alt="logo">
+                </a>
+                <a class="navbar-brand fs-2 fw-semibold logo-1" href="index.html">NYA</a>
+                <a class="navbar-brand fs-2 fw-semibold logo-2" href="index.html">Studios</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                    <span class="fs-1 fw-semibold">&#9776;</span>
+                </button>
+                <div role="navigation" class="justify-content-end justify-content-sm-end navbar-collapse collapse" id="main-nav">
+                    <ul class="navbar-nav fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link me-3 fs-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 fs-3" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 fs-3" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+    </header>   
+    <main role="main">
         <div class="skip-link d-flex justify-content-end arrow-container p-3 up">
-            <a href="#down" aria-label="Go to top">
+            <a href="#down" aria-label="Go to bottom">
                 <i class="fa-solid fa-arrow-down animate__animated animate__shakeY"></i>
             </a>
         </div>
-        <div class="container p-5">
-            <form>
+        <div class="title">
+            <h1 role="heading" class="text-center display-5 fw-semibold">Contact</h1>
+        </div>
+        <div itemscope itemtype="https://schema.org/ContactPage" class="container p-5">
+            <form itemprop="mainEntity" role="form">
                 <div class="row">
                     <div class="col-md-12 col-lg-8 mx-auto p-3 text-center">
                         <label class="m-5 fs-4" for="fullName">Full Name</label>
-                        <input type="text" id="fullName" class="form-control equal-size p-3 rounded-pill border-5" placeholder="Your name...">
+                        <input type="text" id="fullName" class="form-control equal-size p-3 rounded-pill border-5" placeholder="Your name..." aria-label="Full Name">
                     </div>
                     <div class="col-md-12 col-lg-8 mx-auto p-3 text-center">
                         <label class="m-5 fs-4" for="email">Email</label>
-                        <input type="email" id="email" class="form-control equal-size p-3 rounded-pill border-5" placeholder="Your email...">
+                        <input type="email" id="email" class="form-control equal-size p-3 rounded-pill border-5" placeholder="Your email..." aria-label="Email">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-lg-8 mx-auto mb-3 text-center">
                         <label class="m-5 fs-4" for="message">Message</label>
-                        <textarea id="message" class="form-control p-3 rounded-5 border-5" rows="8" placeholder="Your message here..."></textarea>
+                        <textarea id="message" class="form-control p-3 rounded-5 border-5" rows="8" placeholder="Your message here..." aria-label="Message"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-lg-8 mx-auto">
-                        <button class="btn w-100 mt-5 border border-5 fs-4 submit">Submit</button>
+                        <button type="submit" value="Submit" class="btn w-100 mt-5 border border-5 fs-4 submit" type="submit">Submit</button>
                     </div>
                 </div>
             </form>
@@ -76,7 +82,7 @@
         <div class="footer">
             <div class="d-flex justify-content-center pt-5 social-icons">
                 <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook p-3 fs-1"></i></a>
-                <a href="https://www.github.com" aria-label="Github"><i class="fa-brands fa-github p-3 fs-1"></i></a>
+                <a href="https://github.com/nya00001" aria-label="Github"><i class="fa-brands fa-github p-3 fs-1"></i></a>
                 <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram p-3 fs-1"></i></a>
                 <a href="https://mail.google.com" aria-label="Email"><i class="fa-regular fa-envelope p-3 fs-1"></i></a>
             </div>

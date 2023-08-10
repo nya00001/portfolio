@@ -179,6 +179,10 @@ label {
     color: var(--secondary-color);
 }
 
+.title {
+    color: var(--secondary-color);
+}
+
 @media (min-width: 968px) {
 
     .hero-image {
