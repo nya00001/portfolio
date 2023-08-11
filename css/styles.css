@@ -102,6 +102,10 @@ body {
     color: var(--secondary-color);
 }
 
+nav a {
+    color: var(--primary-color);
+}
+
 .work {
     color: var(--secondary-color);
 }
