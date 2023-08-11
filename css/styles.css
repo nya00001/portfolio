@@ -50,6 +50,8 @@ table {
 	border-spacing: 0;
 }
 
+/* CSS variables to customize the default colour scheme of Bootstrap. */
+
 :root {
     --primary-color: #0A0C1F;
     --secondary-color: #FFFFFF;
@@ -133,6 +135,8 @@ nav a {
     color: var(--light-color);
 }
 
+/* animates the skip links when hovered */
+
 .skip-link a:hover {
     animation: skiplinkmove 0.3s ease-in-out;
     animation-iteration-count: infinite;
@@ -186,6 +190,9 @@ label {
 .title {
     color: var(--secondary-color);
 }
+
+/* media query to achieve banner image opacity and make it relative. */
+
 
 @media (min-width: 968px) {
 
